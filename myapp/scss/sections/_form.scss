@@ -1,0 +1,170 @@
+.form {
+    padding: 48px 50px 40px;
+    margin-right: -50px;
+    &__title {
+        color: #2a2a2a;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        &--uppercase {
+            text-transform: uppercase;
+        }
+        span {
+            color: #8ac189;
+        }
+    }
+    &__subtitle {
+        color: #807f90;
+        font-size: 15px;
+        line-height: 30px;
+        text-align: center;
+    }
+    &-line {
+        margin-bottom: 15px;
+    }
+    &-line-wrap {
+        position: relative;
+    }
+    &__discount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        background: #e9e7e8;
+        font-size: 14px;
+        line-height: 19px;
+        font-style: italic;
+        text-align: center;
+    }
+}
+
+input, textarea {
+    color: #474d58;
+    width: 100%;
+    border: 1px solid #edecec;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: 14px 25px;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    &:focus:required:invalid {
+        border-color: red;
+    }
+    &:required:valid {
+        border-color: green;
+    }
+    @media only screen and (max-width: 749px) {
+        font-size: 11px;
+        line-height: 15px;
+        padding: 19px 17px 17px;
+    }
+}
+.jq-selectbox__select-text.placeholder{
+    font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #848489;
+}
+input.empty_field {
+    border: 1px solid red;
+}
+.opened .jq-selectbox__select {
+    border-color: #edecec;
+}
+.jq-selectbox__select {
+    border-color: #edecec;
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: 14px 25px;
+    height: auto;
+}
+.jq-selectbox__dropdown {
+    border-color: #edecec;
+    background: #f2f2f2;
+    border-radius: 7px;
+    
+}
+.jq-selectbox li {
+    padding: 14px 25px;
+    border-color: #edecec;
+    font-size: 14px;
+    color: #474d58;
+    text-transform: uppercase;
+    background: #f2f2f2;
+    background: linear-gradient(to top, #ececf4, #f9f9f9);
+    &:hover {
+        background: #85b2de;
+    }
+    &.selected {
+        background: #85b2de;
+    }
+
+}
+.jq-selectbox__select-text {
+    font-size: 14px;
+    color: #474d58;
+    text-transform: uppercase;
+}
+.jq-selectbox__trigger-arrow {
+    border: none;
+    top: 18px;
+    width: 15px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='arrow-down' x='0px' y='0px' viewBox='0 0 960 560' enable-background='new 0 0 960 560' xml:space='preserve'%3e%3cg%3e%3cpath d='M480,344.181L268.869,131.889c-15.756-15.859-41.3-15.859-57.054,0c-15.754,15.857-15.754,41.57,0,57.431l237.632,238.937 c8.395,8.451,19.562,12.254,30.553,11.698c10.993,0.556,22.159-3.247,30.555-11.698l237.631-238.937 c15.756-15.86,15.756-41.571,0-57.431s-41.299-15.859-57.051,0L480,344.181z'/%3e%3c/g%3e%3c/svg%3e");
+    background-size: contain;
+}
+.agree-line {
+    display: flex;
+    position: relative;
+    label{
+        padding-left: 15px;
+    }
+    label:before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #eeedeb;
+        background: #f6f5f3;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+        left: 0;
+    }
+    input {
+        display: none;
+    }
+    input[type=checkbox]:checked+label:after {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        width: 7px;
+        height: 4px;
+        top: 35%;
+        -webkit-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+        left: 2px;
+        border: 1px solid #181716;
+        border-top: none;
+        border-right: none;
+        background: 0 0;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
