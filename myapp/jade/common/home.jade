@@ -4,9 +4,11 @@ section.home
             .home__title
                 span.home__title-text 
                     span.letters Кредит под ПТС 
-                    <span class="br-desktop br-mobile"><br></span>
-                    span.letters Автомобиля по ставке 
-                    <span class="br-desktop br-mobile"><br></span>
+                    <br>
+                    span.letters Автомобиля 
+                    <br>
+                    span.letters по ставке 
+                    <br>
                     span.letters от 1.9% в месяц
             .home__subtitle
                 span.home__subtitle--other.letters Без справок,страховок и поручителей
@@ -47,34 +49,35 @@ section.home
                 input.utm_content.hidden(type='hidden', name='utm_content')
                 input(type='hidden', name='info', value='Одобрение кредита')
                 .form__title 
-                    .home__title--uppercase Одобрение кредита <br class="br-desktop"><br class="br-planshet"> <br class="br-mobile-320 ">
+                    .form__title--uppercase Одобрение кредита <br class="br-desktop"><br class="br-planshet"> <br class="br-mobile-320 ">
                     | онлайн <span>за 28 минут </span>
                 .form__subtitle Назовем точные условия без визита в офис
-                .form-line 
-                    label
-                        input(type="text" placeholder="Город проживания" name="city" required).rfield
-                .form-line 
-                    label
-                        input(type="text" placeholder="Ваше имя" name="name" required).rfield
-                .form-line 
-                    label
-                        input(type="text" placeholder="Номер телефона" name="phone" required).rfield.phone-mask
-                .form-line 
-                    label
-                        input(type="number" placeholder="сумма кредита" name="sum" required).rfield
-                .form-line 
-                    label
-                        select(data-placeholder="Вид ТС" class="styled")
-                            option
-                            option Грузовой транспорт
-                            option Легковые авто
-                            option Мототехника
-                            option Коммерческий транспорт
-                            option Водный транспорт
-                            option Спецтехника
-                .form-line-wrap
-                    button.btn.btn-finish(type="submit" data-modal="modalFinish") Получить одобрение
-                    .form__discount 98% <br>вероятного<br> одобрения
-                    .agree-line
-                        input#modal__agree(type='checkbox', checked='', disabled='')
-                        label(for='#modal__agree') я согласен (-на) с политикой  обработки персональных данных 
+                .form__lines
+                    .form-line 
+                        label
+                            input(type="text" placeholder="Город проживания" name="city" required).rfield
+                    .form-line 
+                        label
+                            input(type="text" placeholder="Ваше имя" name="name" required).rfield
+                    .form-line 
+                        label
+                            input(type="text" placeholder="Номер телефона" name="phone" required).rfield.phone-mask
+                    .form-line 
+                        label
+                            input(type="number" placeholder="сумма кредита" name="sum" required).rfield
+                    .form-line 
+                        label
+                            select(data-placeholder="Вид ТС" class="styled")
+                                option
+                                option Грузовой транспорт
+                                option Легковые авто
+                                option Мототехника
+                                option Коммерческий транспорт
+                                option Водный транспорт
+                                option Спецтехника
+                    .form-line-wrap
+                        button.btn.btn-finish(type="submit" data-modal="modalFinish") Получить одобрение
+                        .form__discount 98% <br>вероятного<br> одобрения
+                        .agree-line
+                            input#modal__agree(type='checkbox', checked='', disabled='')
+                            label(for='#modal__agree') я согласен (-на) с политикой  обработки персональных данных 

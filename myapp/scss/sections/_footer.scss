@@ -3,6 +3,7 @@
     background: #fff;
     font-size: 14px;
     font-weight: 200;
+    letter-spacing: 1px;
     @media only screen and (max-width: 1299px) and (orientation: portrait),
     screen and (max-width: 1080px) {
     }
@@ -23,10 +24,13 @@
         font-size: 15px;
         font-weight: 500;
         text-transform: uppercase;
+        padding-left: 11px;
     }
     &__policy {
         margin-left: auto;
         font-size: 14px;
+        padding-right: 11px;
+        letter-spacing: 0.5px;
     }
 
 }

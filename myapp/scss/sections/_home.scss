@@ -3,6 +3,7 @@
     position: relative; 
     margin-top: auto;
     margin-bottom: auto;
+    letter-spacing: 1px;
     @media only screen and (max-width: 1299px) and (orientation: portrait),
     screen and (max-width: 1080px) {
         padding-top: 35px;
@@ -21,14 +22,11 @@
         screen and (max-width: 1080px) {
             flex-wrap: wrap;
         }
-        @media screen and (max-height: 850px) and  (min-width: 1081px) {
-            padding: 0 94px;
-        }
     }
     &__body {
         padding-top: 17px;
         padding-right: 20px;
-        width: 52%;
+        width: 44%;
         @media only screen and (max-width: 1299px) and (orientation: portrait),
         screen and (max-width: 1080px) {
             width: 100%;
@@ -45,12 +43,13 @@
         }
     }
     &__title {
-        font-family: "AABebasNeue", Arial, Helvetica, sans-serif;
         font-size: 47px;
         line-height: 60px;
         font-weight: 500;
         color: #272e3b;
         max-width: 460px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
         @media only screen and (max-width: 1430px) {
             font-size: 45px;
             line-height: 58px;
@@ -110,6 +109,8 @@
             
             &+.home__subtitle--other {
                 font-weight: 500;
+                padding-left: 25px;
+                padding-right: 25px;
                 @media only screen and (max-width: 1299px) and (orientation: portrait),
                 screen and (max-width: 1080px) {
                 }
@@ -137,9 +138,10 @@
     }
     &__block {
         display: flex;
+        align-items: center;
     }
     &__items {
-        margin: 40px 0 0;
+        margin: 45px 0 0;
         padding: 0;
         list-style: none;
         @media only screen and (max-width: 1299px) and (orientation: portrait),
@@ -159,7 +161,7 @@
         font-size: 18px;
         line-height: 25px;
         &+.home__item {
-            margin-top: 30px;
+            margin-top: 33px;
         }
     }
     &__icon {
@@ -198,7 +200,7 @@
         &:after {
             content: "";
             position: absolute;
-            top: 0;
+            top: -40px;
             left: 50%;
             margin-right: -50%;
             transform: translate(-50%, 0);
@@ -217,13 +219,13 @@
         &:before {
             content: "";
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 120%;
-            height: 100%;
+            top: -10%;
+            left: -3%;
+            width: 115%;
+            height: 115%;
             background: url('../img/list.png') no-repeat;
             background-position: center;
-            background-size: cover;
+            background-size: contain;
             z-index: -1;
         }
     }
