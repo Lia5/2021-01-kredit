@@ -2,7 +2,7 @@
     padding: 43px 86px 76px 40px;
     margin-right: -50px;
     @media only screen and (max-width: 1299px) and (orientation: portrait),
-    screen and (max-width: 1080px) {
+    screen and (max-width: 1200px) {
         padding: 43px 50px 36px 5px;        
     }
     @media screen and (max-width: 749px){
@@ -20,7 +20,7 @@
             letter-spacing: normal;
         }
         @media only screen and (max-width: 1299px) and (orientation: portrait),
-        screen and (max-width: 1080px) {
+        screen and (max-width: 1200px) {
             letter-spacing: 0.5px;
         }
         @media screen and (max-width: 749px){
@@ -30,7 +30,7 @@
         &--uppercase {
             text-transform: uppercase;
             @media only screen and (max-width: 1299px) and (orientation: portrait),
-            screen and (max-width: 1080px) {
+            screen and (max-width: 1200px) {
                 display: inline;
             }
         }
@@ -43,7 +43,7 @@
         font-size: 15px;
         line-height: 30px;
         text-align: center;
-        letter-spacing: 0.5px;
+        letter-spacing: 0;
         margin-bottom: 18px;
         @media screen and (max-width: 749px){
             line-height: 25px;
@@ -52,7 +52,7 @@
     &__lines {
         padding: 0 20px;
         @media only screen and (max-width: 1299px) and (orientation: portrait),
-        screen and (max-width: 1080px) {
+        screen and (max-width: 1200px) {
             padding: 0;
             display: flex;
             flex-wrap: wrap;
@@ -61,7 +61,7 @@
     &-line {
         margin-bottom: 15px;
         @media only screen and (max-width: 1299px) and (orientation: portrait),
-        screen and (max-width: 1080px) {
+        screen and (max-width: 1200px) {
             width: 49%;
         }
         @media screen and (max-width: 749px){
@@ -69,7 +69,10 @@
             margin-bottom: 14px;
         }
         &:nth-child(2n) {
-            margin-left: 2%;
+            @media only screen and (max-width: 1299px) and (orientation: portrait),
+            screen and (max-width: 1200px) {
+                margin-left: 2%;
+            }
             @media screen and (max-width: 749px){
                 margin-left: 0;
             }
@@ -79,7 +82,7 @@
         position: relative;
         margin-top: 20px;
         @media only screen and (max-width: 1299px) and (orientation: portrait),
-        screen and (max-width: 1080px) {
+        screen and (max-width: 1200px) {
             width: 49%;
             margin-left: 2%;
             margin-top: 0;
@@ -107,7 +110,7 @@
         text-align: center;
         letter-spacing: 0.5px;
         @media only screen and (max-width: 1299px) and (orientation: portrait),
-        screen and (max-width: 1080px) {
+        screen and (max-width: 1200px) {
             right: -50px;
         }
         @media screen and (max-width: 749px){
@@ -139,7 +142,7 @@ input, textarea {
         padding: 21px 24px;
     }
     @media only screen and (max-width: 1299px) and (orientation: portrait),
-    screen and (max-width: 1080px) {
+    screen and (max-width: 1200px) {
         padding: 24px 30px;
     }
     @media only screen and (max-width: 749px) {
@@ -170,7 +173,7 @@ input.empty_field {
         padding: 21px 24px;
     }
     @media only screen and (max-width: 1299px) and (orientation: portrait),
-    screen and (max-width: 1080px) {
+    screen and (max-width: 1200px) {
         padding: 24px 30px;
     }
     @media only screen and (max-width: 749px) {
@@ -224,7 +227,6 @@ input.empty_field {
     margin-top: 25px;
     font-size: 14px;
     line-height: 1.4;
-    letter-spacing: 1px;
     font-weight: 400;
     color: #535353;
     @media only screen and (max-width: 1400px) {
@@ -234,15 +236,13 @@ input.empty_field {
     label{
         padding-left: 45px;
         text-align: center;
-        letter-spacing: 0.5px;
         @media only screen and (max-width: 1400px) {
-            padding-left: 45px;
-            padding-right: 20px;
+            padding-left: 12px;
+            padding-right: 0px;
         }
         @media only screen and (max-width: 749px) {
             padding-left: 34px;
             padding-right: 11px;
-            letter-spacing: normal;
         }
     }
     label:before {
@@ -259,7 +259,7 @@ input.empty_field {
         transform: translate(0,-50%);
         left: 10px;
         @media only screen and (max-width: 1400px) {
-            left: 22px;
+            left: 2px;
         }
     }
     input {
@@ -286,7 +286,7 @@ input.empty_field {
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
         @media only screen and (max-width: 1400px) {
-            left: 24px;
+            left: 4px;
         }
     }
 }

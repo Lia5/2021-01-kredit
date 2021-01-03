@@ -23,7 +23,7 @@ html {
 	height: 100%;
 	width: 100%;
 	@media only screen and (max-width: 1299px) and (orientation: portrait),
-	screen and (max-width: 1080px) {
+	screen and (max-width: 1200px) {
 		// height: auto;
 	}
 }
@@ -43,7 +43,7 @@ body {
     background-position: center;
     background-size: cover;
 	@media only screen and (max-width: 1299px) and (orientation: portrait),
-	screen and (max-width: 1080px) {
+	screen and (max-width: 1200px) {
 		background-image: url('../img/main-bg-750.jpg');
 		background-position-y: 0px;
 	}
@@ -66,7 +66,7 @@ body {
 	background-position: center;
 	background-size: cover;
 	@media only screen and (max-width: 1299px) and (orientation: portrait),
-	screen and (max-width: 1080px) {
+	screen and (max-width: 1200px) {
 		background-image: url('../img/main-bg-750.jpg');
 		background-position: top center;
 	}
@@ -109,7 +109,7 @@ b, strong {
 		padding: 0 60px;
 	}
 	@media only screen and (max-width: 1299px) and (orientation: portrait),
-	screen and (max-width: 1080px) {
+	screen and (max-width: 1200px) {
 		max-width: 750px;
 		padding: 0 15px;
 	}
@@ -198,7 +198,7 @@ ul,li {
 		padding-bottom: 20px;
 	}
 	@media only screen and (max-width: 1299px) and (orientation: portrait),
-	screen and (max-width: 1080px) {
+	screen and (max-width: 1200px) {
 		padding: 27px 40px 25px 10px;
 	}
 	@media screen and (max-width: 749px){
@@ -321,7 +321,7 @@ ul,li {
 //br 
 .br-desktop {
 	@media only screen and (max-width: 1299px) and (orientation: portrait),
-    screen and (max-width: 1080px) {
+    screen and (max-width: 1200px) {
 		display: none;
 	}
 	@media screen and (max-width: 749px){
@@ -331,7 +331,7 @@ ul,li {
 .br-planshet {
 	display: none; 
 	@media only screen and (max-width: 1299px) and (orientation: portrait),
-    screen and (max-width: 1080px) {
+    screen and (max-width: 1200px) {
 		display: inline;
 	}
 	@media screen and (max-width: 749px){
