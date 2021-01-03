@@ -73,6 +73,10 @@ header {
         font-size: 15px;
         padding: 17px 10px;
         text-align: center;
+        border-radius: 5px;
+        &:hover {
+            opacity: 0.8;
+        }
     }
     &__text {
         max-width: 264px;
