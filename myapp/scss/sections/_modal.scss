@@ -26,7 +26,7 @@
   &__body {
     position: relative;
     background: #fff;
-    padding: 68px 50px 50px;
+    padding: 40px 30px 10px;
     border-radius: 7px;
 
     @media only screen and (max-width: 749px) {
@@ -49,8 +49,7 @@
     }
   }
   &__subtitle {
-    max-width: 252px;
-    margin: 0 auto 35px;
+    margin: 0 auto 5px;
     font-size: 20px;
     line-height: 27px;
     color: #262a38;
@@ -59,7 +58,6 @@
     @media only screen and (max-width: 749px) {
       font-size: 14px;
       line-height: 19px;
-      max-width: 180px;
       margin-bottom: 25px;
     }
     span {
@@ -69,6 +67,10 @@
   }
   &-open {
       display: block;
+  }
+  .form {
+    padding: 20px;
+    margin-right: 0;
   }
   .btn {
     @media only screen and (max-width: 749px) {
@@ -165,7 +167,7 @@
   }
 }
 #modalSupport,
-#modalSend {
+#modalFinish {
   .modal__wrap {
     max-width: 420px;
     text-align: center;
@@ -173,7 +175,10 @@
       //     max-width: 100%;
           width: 95%;
           padding-right: 1%;
-      }   
+      }
+  }
+  .modal__body {
+    padding: 40px 30px 40px;
   }
 }
 #policy {

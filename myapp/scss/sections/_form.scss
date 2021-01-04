@@ -290,3 +290,6 @@ input.empty_field {
         }
     }
 }
+select.empty_field + .jq-selectbox__select {
+    border-color: red;
+}

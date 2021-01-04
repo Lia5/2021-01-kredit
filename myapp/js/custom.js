@@ -1,18 +1,4 @@
 $(function() {
-    if(jQuery('.scroll-to').length) {
-        var $page = $('html, body');
-        $('.scroll-to[href*="#"]').click(function() {
-            $page.animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-            }, 400);
-            if ( window.innerWidth < 992 || window.screen.width < 992) {
-                $('.main-menu').removeClass('active');
-                $('.menu-toggle').removeClass('active');
-            }
-            return false;
-        });
-    }
-
     //select-number form
     if(jQuery('.phone-mask').length) {
         jQuery(function($){
@@ -79,10 +65,6 @@ $(function() {
           e.preventDefault();
           var btn = $(this);
           var numModal = btn.attr('href');
-          if(numModal == '#modalQuiz'){
-
-            $('.qa-del-discount').css('display', 'block');
-          }
           var modal =  $(numModal);
         //   modalWrap.removeClass('fadeOutUp');
         //   modalWrap.addClass('fadeInDown');
@@ -95,10 +77,6 @@ $(function() {
 
         });
         $('.modal-close').click(function (){
-            if ( window.innerWidth < 750 || window.screen.width < 750) {
-                $('.main-menu').removeClass('active');
-                $('.menu-toggle').removeClass('active');
-            }
             // modalWrap.removeClass('fadeInDown');
             // modalWrap.addClass('fadeOutUp');
             modalWrap.removeClass('animated zoomIn');
@@ -117,8 +95,6 @@ $(function() {
           if (close.is(e.target)) {
           } else if (!div.is(e.target) // если клик был не по нашему блоку
           && div.has(e.target).length === 0) { // и не по его дочерним элементам
-                $('.main-menu').removeClass('active');
-                $('.menu-toggle').removeClass('active');
                 var modalWrap = $('.modal__wrap');
                 // modalWrap.removeClass('fadeInDown');
                 // modalWrap.addClass('fadeOutUp');
@@ -176,6 +152,10 @@ $(function() {
         }
     });
 
+    $('.btn-submit').click(function(){
+        $('.btn-submit').submit();
+    });
+
     // form
     $('form').submit(function() { 
         var form = $(this);
@@ -188,23 +168,17 @@ $(function() {
                 // Если поле не пустое удаляем класс-указание
                 $(this).removeClass('empty_field');
 
-                if((form.attr("name") == "quiz") && form.find('.useful__input:checked').length) {
-                        
-                console.log('jr');
-                    
-
                     if (!form.find('.empty_field').length) {
                         if(form.attr("name") == "podderjka"){
-                            ym(62113519,'reachGoal','callback');
                         }
                         if(form.attr("name") == "quiz"){
-                            ym(62113519,'reachGoal','order'); 
                         }
                         $.ajax({
                             type: "POST",
                             url: "../mail.php", //Change
                             data: form.serialize()
                         }).done(function() {
+                        });
                             var numModal = form.find('.btn-finish').attr('data-modal');
                             var modal =  $(numModal);
                             var modalWrap = $('.modal__wrap');
@@ -220,7 +194,6 @@ $(function() {
                                 // Done Functions
                                 // form.trigger("reset");
                             }, 1000);
-                        });
 
                         $.ajax({
                             method: "POST",
@@ -229,9 +202,7 @@ $(function() {
                         }).done(function(){});
                     }
 
-            } else {
-                $('.useful__label').css('border-color', 'red');
-            }
+
             } else {}
         });
 		return false;
