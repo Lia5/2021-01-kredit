@@ -281,24 +281,24 @@ ul,li {
 }
 @-webkit-keyframes si-button-pulse {
 	from {
-		box-shadow: 0 0 8px 6px #135ba6, 0 0 12px 14px #135ba6; }
+		box-shadow: 0 0 8px 6px #fee18c, 0 0 12px 14px #fee18c; }
 	to {
-		box-shadow: 0 0 18px 6px rgba(19, 91, 166, 0), 0 0 4px 71px rgba(19, 91, 166, 0); } }
+		box-shadow: 0 0 18px 6px rgba(254, 225, 140, 0), 0 0 4px 71px rgba(254, 225, 140, 0); } }
 @-moz-keyframes si-button-pulse {
 	from {
-		box-shadow: 0 0 8px 6px #135ba6, 0 0 12px 14px #135ba6; }
+		box-shadow: 0 0 8px 6px #fee18c, 0 0 12px 14px #fee18c; }
 	to {
-		box-shadow: 0 0 18px 6px rgba(19, 91, 166, 0), 0 0 4px 71px rgba(19, 91, 166, 0); } }
+		box-shadow: 0 0 18px 6px rgba(254, 225, 140, 0), 0 0 4px 71px rgba(254, 225, 140, 0); } }
 @-ms-keyframes si-button-pulse {
 	from {
-		box-shadow: 0 0 8px 6px #135ba6, 0 0 12px 14px #135ba6; }
+		box-shadow: 0 0 8px 6px #fee18c, 0 0 12px 14px #fee18c; }
 	to {
-		box-shadow: 0 0 18px 6px rgba(19, 91, 166, 0), 0 0 4px 71px rgba(19, 91, 166, 0); } }
+		box-shadow: 0 0 18px 6px rgba(254, 225, 140, 0), 0 0 4px 71px rgba(254, 225, 140, 0); } }
 @keyframes si-button-pulse {
 	from {
-		box-shadow: 0 0 8px 6px #135ba6, 0 0 12px 14px #135ba6; }
+		box-shadow: 0 0 8px 6px rgb(254, 225, 140), 0 0 12px 14px #fee18c; }
 	to {
-		box-shadow: 0 0 18px 6px rgba(19, 91, 166, 0), 0 0 4px 71px rgba(19, 91, 166, 0); } }
+		box-shadow: 0 0 18px 6px rgba(254, 225, 140, 0), 0 0 4px 71px rgba(254, 225, 140, 0); } }
 
 .bubble{
 	position: relative;
@@ -355,6 +355,7 @@ ul,li {
 @import "sections/header";
 @import "sections/home";
 @import "sections/form";
+@import "sections/thanks";
 
 @import "sections/modal";
 @import "sections/footer";

@@ -169,35 +169,36 @@ $(function() {
                 $(this).removeClass('empty_field');
 
                     if (!form.find('.empty_field').length) {
-                        if(form.attr("name") == "podderjka"){
-                        }
-                        if(form.attr("name") == "quiz"){
-                        }
+                        // if(form.attr("name") == "podderjka"){
+                        // }
+                        // if(form.attr("name") == "quiz"){
+                        // }
                         $.ajax({
                             type: "POST",
                             url: "../mail.php", //Change
                             data: form.serialize()
                         }).done(function() {
+                            // var numModal = form.find('.btn-finish').attr('data-modal');
+                            // var modal =  $(numModal);
+                            // var modalWrap = $('.modal__wrap');
+                            // // modalWrap.removeClass('fadeOutUp');
+                            // // modalWrap.addClass('fadeInDown');
+                            // modalWrap.removeClass('animated zoomOut');
+                            // modalWrap.addClass('animated zoomIn');
+                            // $('.modal').addClass('disabled');
+                            // modal.removeClass('disabled');
+                            // modal.addClass('flex');
+                            // $('body').addClass('body-modal-open');
+                            // setTimeout(function() {
+                            //     // Done Functions
+                            //     // form.trigger("reset");
+                            // }, 1000);
                         });
-                            var numModal = form.find('.btn-finish').attr('data-modal');
-                            var modal =  $(numModal);
-                            var modalWrap = $('.modal__wrap');
-                            // modalWrap.removeClass('fadeOutUp');
-                            // modalWrap.addClass('fadeInDown');
-                            modalWrap.removeClass('animated zoomOut');
-                            modalWrap.addClass('animated zoomIn');
-                            $('.modal').addClass('disabled');
-                            modal.removeClass('disabled');
-                            modal.addClass('flex');
-                            $('body').addClass('body-modal-open');
-                            setTimeout(function() {
-                                // Done Functions
-                                // form.trigger("reset");
-                            }, 1000);
+                            
 
                         $.ajax({
                             method: "POST",
-                            url: "../telegram.php", //Change
+                            url: "../send.php", //Change
                             data: form.serialize()
                         }).done(function(){});
                     }
