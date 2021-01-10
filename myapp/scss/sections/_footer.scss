@@ -49,6 +49,10 @@
     }
     &__lic {
         color: #85b2de;
+        @media screen and (max-width: 749px){
+            width: 100%;
+            margin-bottom: 8px;
+        }
     }
     a:hover {
         opacity: 0.8;
