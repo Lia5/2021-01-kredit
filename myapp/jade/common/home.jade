@@ -15,7 +15,7 @@ section.home
                     span.home__subtitle--mob.letters  Без справок, страховок 
                     span.home__subtitle--mob.letters  и поручителей
                 span.home__subtitle--other 
-                    span.home__subtitle--mob.letters От 50 000₽ 
+                    span.home__subtitle--mob.letters От 100 000₽ 
                     span.home__subtitle--mob.letters до 2 млн рублей
             .home__block
                 ul.home__items
@@ -45,7 +45,12 @@ section.home
 
 
         .home__form.form
-            form(action="")
+            form
+                // Hidden Required Fields
+                input(type='hidden', name='project_name', value='Единый кредитный центр')
+                input(type='hidden', name='admin_email', value='zalog.kred@yandex.ru')
+                input(type='hidden', name='form_subject', value='Одобрение кредита')
+                // END Hidden Required Fields
                 input.utm_source.hidden(type='hidden', name='utm_source')
                 input.utm_medium.hidden(type='hidden', name='utm_medium')
                 input.utm_campaign.hidden(type='hidden', name='utm_campaign')
@@ -71,14 +76,14 @@ section.home
                             input(type="number" placeholder="сумма кредита" name="sum" required).rfield
                     .form-line 
                         label
-                            select(data-placeholder="Вид ТС" class="styled").rfield
-                                option
-                                option Грузовой транспорт
-                                option Легковые авто
-                                option Мототехника
-                                option Коммерческий транспорт
-                                option Водный транспорт
-                                option Спецтехника
+                            select(name="tc" data-placeholder="Вид ТС" class="styled").rfield
+                                option(value="")
+                                option(value="Грузовой транспорт") Грузовой транспорт
+                                option(value="Легковые авто") Легковые авто
+                                option(value="Мототехника") Мототехника
+                                option(value="Коммерческий транспорт") Коммерческий транспорт
+                                option(value="Водный транспорт") Водный транспорт
+                                option(value="Спецтехника") Спецтехника
                     
                     .form-line-wrap
                         .btn-finish(data-modal="#modalFinish").si-button-pulse

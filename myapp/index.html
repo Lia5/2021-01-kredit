@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="img/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-    <meta name="description" content="Деньги под залог любого транспорта по всей РФ"><meta property="og:image" content="https://lia5.github.io/2021-01-kredit/myapp/img/favicon/apple-touch-icon-180x180.png" />
+    <meta name="description" content="Деньги под залог любого транспорта по всей РФ"><meta property="og:image" content="https://lia5.github.io/2021-01-kredit/myapp/img/favicon/favicon.ico" />
     <link rel="stylesheet" href="css/main.min.css">
     <title>Единый Кредитный Центр | Деньги под залог любого транспорта по всей РФ</title>
   </head>
@@ -28,7 +27,7 @@
         <div class="wrap">
           <div class="home__body animated-parent"> 
             <div class="home__title"><span class="home__title-text"> <span class="letters">Кредит под ПТС </span><br><span class="letters">Автомобиля </span><br><span class="letters">по ставке </span><br><span class="letters">от 1.9% в месяц</span></span></div>
-            <div class="home__subtitle"><span class="home__subtitle--other"><span class="home__subtitle--mob letters"> Без справок, страховок </span><span class="home__subtitle--mob letters"> и поручителей</span></span><span class="home__subtitle--other"> <span class="home__subtitle--mob letters">От 50 000₽ </span><span class="home__subtitle--mob letters">до 2 млн рублей</span></span></div>
+            <div class="home__subtitle"><span class="home__subtitle--other"><span class="home__subtitle--mob letters"> Без справок, страховок </span><span class="home__subtitle--mob letters"> и поручителей</span></span><span class="home__subtitle--other"> <span class="home__subtitle--mob letters">От 100 000₽ </span><span class="home__subtitle--mob letters">до 2 млн рублей</span></span></div>
             <div class="home__block">
               <ul class="home__items">
                 <li class="home__item">
@@ -52,7 +51,12 @@
             </div>
           </div>
           <div class="home__form form">
-            <form action="">
+            <form>
+              <!-- Hidden Required Fields-->
+              <input type="hidden" name="project_name" value="Единый кредитный центр">
+              <input type="hidden" name="admin_email" value="zalog.kred@yandex.ru">
+              <input type="hidden" name="form_subject" value="Одобрение кредита">
+              <!-- END Hidden Required Fields-->
               <input type="hidden" name="utm_source" class="utm_source hidden">
               <input type="hidden" name="utm_medium" class="utm_medium hidden">
               <input type="hidden" name="utm_campaign" class="utm_campaign hidden">
@@ -86,14 +90,14 @@
                 </div>
                 <div class="form-line"> 
                   <label>
-                    <select data-placeholder="Вид ТС" class="styled rfield">
-                      <option></option>
-                      <option>Грузовой транспорт</option>
-                      <option>Легковые авто</option>
-                      <option>Мототехника</option>
-                      <option>Коммерческий транспорт</option>
-                      <option>Водный транспорт</option>
-                      <option>Спецтехника</option>
+                    <select name="tc" data-placeholder="Вид ТС" class="styled rfield">
+                      <option value=""></option>
+                      <option value="Грузовой транспорт">Грузовой транспорт</option>
+                      <option value="Легковые авто">Легковые авто</option>
+                      <option value="Мототехника">Мототехника</option>
+                      <option value="Коммерческий транспорт">Коммерческий транспорт</option>
+                      <option value="Водный транспорт">Водный транспорт</option>
+                      <option value="Спецтехника">Спецтехника</option>
                     </select>
                   </label>
                 </div>
@@ -156,7 +160,7 @@
           <form name="podderjka">
             <!-- Hidden Required Fields-->
             <input type="hidden" name="project_name" value="Единый кредитный центр">
-            <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+            <input type="hidden" name="admin_email" value="zalog.kred@yandex.ru">
             <input type="hidden" name="form_subject" value="Бесплатная консультация">
             <!-- END Hidden Required Fields-->
             <input type="hidden" name="info" value="Бесплатная консультация">

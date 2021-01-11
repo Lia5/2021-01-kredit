@@ -152,10 +152,6 @@ $(function() {
         }
     });
 
-    $('.btn-submit').click(function(){
-        $('.btn-submit').submit();
-    });
-
     // form
     $('form').submit(function() { 
         var form = $(this);
@@ -164,11 +160,19 @@ $(function() {
         // Функция проверки полей формы
 
         form.find('.rfield').each(function(){
+            console.log($(this));
+            console.log($(this).val());
             if($(this).val() != ''){
                 // Если поле не пустое удаляем класс-указание
                 $(this).removeClass('empty_field');
+                if($(this).hasClass('styled')) {
+                    $(this).parent().removeClass('empty_field');
+                }
 
                     if (!form.find('.empty_field').length) {
+                        // setTimeout(function() {
+                        //     $('select').trigger('refresh');
+                        // }, 1)
                         // if(form.attr("name") == "podderjka"){
                         // }
                         // if(form.attr("name") == "quiz"){
@@ -200,7 +204,9 @@ $(function() {
                             method: "POST",
                             url: "../send.php", //Change
                             data: form.serialize()
-                        }).done(function(){});
+                        }).done(function(){
+                            document.location='/thanks.html';
+                        });
                     }
 
 

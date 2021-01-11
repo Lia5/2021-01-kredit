@@ -21,6 +21,7 @@ if ( $method === 'POST' ) {
 			";
 		}
 	}
+	$message .= $_POST['select'];
 } else if ( $method === 'GET' ) {
 
 	$project_name = trim($_GET["project_name"]);
