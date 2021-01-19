@@ -316,7 +316,7 @@
         &:before {
             content: "";
             position: absolute;
-            top: -46px;
+            top: -25px;
             left: -3%;
             width: 115%;
             height: 111%;
@@ -345,6 +345,9 @@
                 height: 100%;
                 height: calc(100% + 36px);
             }
+        }
+        &.form {
+            padding-top: 100px;
         }
     }
 
